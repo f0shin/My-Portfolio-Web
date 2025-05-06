@@ -1,0 +1,9 @@
+-- 테이블 생성
+--CREATE TABLE contacts (
+--    id VARCHAR(36) NOT NULL PRIMARY KEY, -- UUID 이용
+--    name VARCHAR(100) NOT NULL,
+--    email VARCHAR(100) NOT NULL,
+--    message TEXT NOT NULL,
+--    completed INT DEFAULT 0,
+--    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- 시간 자동 입력
+--);

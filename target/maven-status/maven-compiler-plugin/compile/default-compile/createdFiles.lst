@@ -1,0 +1,16 @@
+com\portfolio\utils\AdminAccessFilter.class
+com\portfolio\utils\MessageUtil.class
+com\portfolio\model\Contact.class
+com\portfolio\controller\ModifyContactServlet.class
+com\portfolio\repository\ContactRepository.class
+com\portfolio\utils\DBConnection.class
+com\portfolio\controller\LoginPageServlet.class
+com\portfolio\utils\ContextListener.class
+com\portfolio\controller\FaviconServlet.class
+com\portfolio\service\ContactService.class
+com\portfolio\controller\AdminServlet.class
+com\portfolio\controller\GetContactListServlet.class
+com\portfolio\controller\LanguageServlet.class
+com\portfolio\controller\PageServlet.class
+com\portfolio\controller\LoginProcessServlet.class
+com\portfolio\controller\SaveContactServlet.class
