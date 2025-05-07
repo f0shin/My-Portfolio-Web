@@ -21,6 +21,20 @@
 				},
 				"auth-model": "oracle_native"
 			}
+		},
+		"h2_embedded-196a7888b4f-1eca34bccd6a950b": {
+			"provider": "h2",
+			"driver": "h2_embedded",
+			"name": "db",
+			"save-password": true,
+			"configuration": {
+				"database": "file:C:\\dev\\db",
+				"url": "jdbc:h2:file:C:\\dev\\db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {

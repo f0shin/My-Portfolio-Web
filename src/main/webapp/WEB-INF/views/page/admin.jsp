@@ -53,10 +53,10 @@
 					<td>
 						<c:choose>
 						    <c:when test="${contact.completed == 1}">
-						        처리 완료 ✅
+						        Completed ✅
 						    </c:when>
 						    <c:otherwise>
-        						미완료 ❌
+        						Not Completed ❌<br>
 						        <a href="/admin/modifyContact?id=${contact.id}" id="completed_button">Complete!</a>
 						    </c:otherwise>
 						</c:choose>

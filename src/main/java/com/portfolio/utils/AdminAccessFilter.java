@@ -28,11 +28,20 @@ public class AdminAccessFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
         HttpSession session = req.getSession(false);
+        
+//        session.setAttribute("user", "test"); // admin이 아닌 경우 테스트
 
         // 로그인 확인
         if (session == null || session.getAttribute("user") == null) {
-            res.sendRedirect("/login"); // 로그인되지 않으면 리다이렉트
+            System.out.println("AdminAccessFilter - /admin/* - ❌ no login");
+            res.sendRedirect("/login"); // 로그인 되어있지 않으면 /login 리다이렉트
             return;
+        } else if (!session.getAttribute("user").equals("admin")) {
+        	System.out.println("AdminAccessFilter - /admin/* - ❌ no admin");
+        	res.sendRedirect("/home"); // admin이 아니면 /home 리다이렉트 (나중을 위해!)
+        	return;
+        } else {
+        	System.out.println("AdminAccessFilter - /admin/* - ✅ admin");
         }
 
         chain.doFilter(request, response); // 정상적인 경우 필터 통과
